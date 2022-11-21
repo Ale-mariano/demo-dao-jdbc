@@ -109,7 +109,7 @@ public class SellerDaoJDBC implements SellerDao {
 		obj.setBaseSalary(rs.getDouble("BaseSalary"));
 		obj.setBirthDate(rs.getDate("BirthDate"));
 		obj.setDepartment(dep);
-		return obj;
+	    return obj;
 	}
 
 	private Department instantiateDepartment(ResultSet rs) throws SQLException {
